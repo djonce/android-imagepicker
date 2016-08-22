@@ -11,6 +11,7 @@
         android:id="@+id/photo_wall_grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="3dp"
         android:scrollbars="none"
         android:gravity="center"
         android:numColumns="3"

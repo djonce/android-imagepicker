@@ -80,6 +80,7 @@ public class PhotoAlbumActivity extends Activity {
                     intent.putExtra("folderPath", list.get(position).getPathName());
                 }
                 startActivity(intent);
+
             }
         });
 

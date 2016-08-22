@@ -1,7 +1,7 @@
 package tech.wangj.pickimage.model;
 
 /**
- * Created by Administrator on 2016/8/22 0022.
+ * Created by wangj on 2016/8/22
  */
 public class AlbumItem {
 

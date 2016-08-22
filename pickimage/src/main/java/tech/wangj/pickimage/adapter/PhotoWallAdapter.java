@@ -16,7 +16,7 @@ import tech.wangj.pickimage.utils.SdcardImageLoader;
 /**
  * 图片墙 （SDCard 上所有的图片）
  *
- * Created by wangj on 2016/8/22 0022.
+ * Created by wangj on 2016/8/22
  */
 public class PhotoWallAdapter extends BaseAdapter{
 

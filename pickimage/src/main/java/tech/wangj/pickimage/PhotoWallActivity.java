@@ -27,7 +27,8 @@ import tech.wangj.pickimage.utils.GloableUtils;
  */
 public class PhotoWallActivity extends Activity {
 
-    public static final int REQUST = 1000;
+    public static final int REQUEST_CODE = 1000;
+    public static final String KEY_PATH = "path";
 
     private TextView titleTV;
 
@@ -60,12 +61,9 @@ public class PhotoWallActivity extends Activity {
         titleTV.setText(R.string.latest_image);
 
         Button backBtn = (Button) findViewById(R.id.topbar_left_btn);
-        Button confirmBtn = (Button) findViewById(R.id.topbar_right_btn);
         mPhotoWall = (GridView) findViewById(R.id.photo_wall_grid);
         backBtn.setText(R.string.photo_album);
         backBtn.setVisibility(View.VISIBLE);
-        confirmBtn.setText(R.string.main_confirm);
-        confirmBtn.setVisibility(View.VISIBLE);
 
         //点击返回，回到选择相册页面
         backBtn.setOnClickListener(new View.OnClickListener() {
@@ -78,7 +76,7 @@ public class PhotoWallActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 String result = (String) adapter.getItem(position);
-                setResult(REQUST, new Intent().putExtra("path", result));
+                setResult(RESULT_OK, new Intent().putExtra(KEY_PATH, result));
                 finish();
             }
         });
