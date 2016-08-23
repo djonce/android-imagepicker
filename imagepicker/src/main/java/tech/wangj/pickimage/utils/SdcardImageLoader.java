@@ -3,7 +3,6 @@ package tech.wangj.pickimage.utils;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Handler;
-import android.support.v4.util.LruCache;
 import android.widget.ImageView;
 
 import java.util.concurrent.ExecutorService;

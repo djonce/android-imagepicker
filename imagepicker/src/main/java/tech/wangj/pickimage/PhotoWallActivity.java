@@ -7,7 +7,6 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -50,8 +49,8 @@ public class PhotoWallActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photo_wall);
-
         initViews();
+        GloableUtils.addActivity(this);
     }
 
     private void initViews() {
@@ -77,7 +76,7 @@ public class PhotoWallActivity extends Activity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 String result = (String) adapter.getItem(position);
                 setResult(RESULT_OK, new Intent().putExtra(KEY_PATH, result));
-                finish();
+                GloableUtils.clearAllActivity();
             }
         });
 
@@ -115,7 +114,7 @@ public class PhotoWallActivity extends Activity {
 
     //重写返回键
     @Override
-    public boolean onKeyDown(int keyCode, @NonNull KeyEvent event) {
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             backAction();
             return true;
@@ -191,7 +190,7 @@ public class PhotoWallActivity extends Activity {
             //从最新的图片开始读取.
             //当cursor中没有数据时，cursor.moveToLast()将返回false
             if (cursor.moveToLast()) {
-                latestImagePaths = new ArrayList<String>();
+                latestImagePaths = new ArrayList<>();
 
                 while (true) {
                     // 获取图片的路径
@@ -235,4 +234,5 @@ public class PhotoWallActivity extends Activity {
             }
         }
     }
+
 }

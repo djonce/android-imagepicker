@@ -7,7 +7,6 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -26,7 +25,7 @@ import tech.wangj.pickimage.utils.GloableUtils;
 
 /**
  * 分相册查看
- *
+ * <p/>
  * Created by wangj on 2016/8/22
  */
 public class PhotoAlbumActivity extends Activity {
@@ -35,7 +34,7 @@ public class PhotoAlbumActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photo_album);
-
+        GloableUtils.addActivity(this);
         if (!GloableUtils.isSdcardOK()) {
             Toast.makeText(this, "SD卡不可用。", Toast.LENGTH_SHORT).show();
             return;
@@ -97,12 +96,12 @@ public class PhotoAlbumActivity extends Activity {
      * 点击返回时，回到相册页面
      */
     private void backAction() {
-       finish();
+        GloableUtils.clearAllActivity();
     }
 
     //重写返回键
     @Override
-    public boolean onKeyDown(int keyCode, @NonNull KeyEvent event) {
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             backAction();
             return true;

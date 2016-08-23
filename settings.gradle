@@ -1,1 +1,1 @@
-include ':sample', ':pickimage'
+include ':sample', ':imagepicker'
