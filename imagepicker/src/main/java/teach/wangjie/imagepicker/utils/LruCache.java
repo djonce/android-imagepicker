@@ -1,4 +1,4 @@
-package tech.wangj.pickimage.utils;
+package teach.wangjie.imagepicker.utils;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

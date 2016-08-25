@@ -1,4 +1,4 @@
-package tech.wangj.pickimage.adapter;
+package teach.wangjie.imagepicker.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,8 +10,8 @@ import android.widget.ImageView;
 import java.util.ArrayList;
 
 import tech.wangj.pickimage.R;
-import tech.wangj.pickimage.utils.DisplaysUtil;
-import tech.wangj.pickimage.utils.SdcardImageLoader;
+import teach.wangjie.imagepicker.utils.DisplaysUtil;
+import teach.wangjie.imagepicker.utils.SdcardImageLoader;
 
 /**
  * 图片墙 （SDCard 上所有的图片）

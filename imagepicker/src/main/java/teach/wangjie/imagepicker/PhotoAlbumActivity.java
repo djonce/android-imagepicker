@@ -1,4 +1,4 @@
-package tech.wangj.pickimage;
+package teach.wangjie.imagepicker;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -19,9 +19,10 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import tech.wangj.pickimage.adapter.PhotoAlbumAdapter;
-import tech.wangj.pickimage.model.AlbumItem;
-import tech.wangj.pickimage.utils.GloableUtils;
+import tech.wangj.pickimage.R;
+import teach.wangjie.imagepicker.adapter.PhotoAlbumAdapter;
+import teach.wangjie.imagepicker.model.AlbumItem;
+import teach.wangjie.imagepicker.utils.GloableUtils;
 
 /**
  * 分相册查看

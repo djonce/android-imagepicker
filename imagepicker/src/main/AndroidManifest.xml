@@ -9,12 +9,12 @@
         android:supportsRtl="true">
 
         <activity
-            android:name=".PhotoAlbumActivity"
+            android:name="teach.wangjie.imagepicker.PhotoAlbumActivity"
             android:label="@string/select_album"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".PhotoWallActivity"
+            android:name="teach.wangjie.imagepicker.PhotoWallActivity"
             android:label="@string/select_image"
             android:screenOrientation="portrait" />
 

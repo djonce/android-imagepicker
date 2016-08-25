@@ -1,4 +1,4 @@
-package tech.wangj.pickimage.views;
+package teach.wangjie.imagepicker.views;
 
 import android.content.Context;
 import android.util.AttributeSet;

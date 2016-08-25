@@ -1,4 +1,4 @@
-package tech.wangj.pickimage.utils;
+package teach.wangjie.imagepicker.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

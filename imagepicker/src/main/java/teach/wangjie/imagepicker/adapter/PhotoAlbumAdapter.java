@@ -1,4 +1,4 @@
-package tech.wangj.pickimage.adapter;
+package teach.wangjie.imagepicker.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,9 +12,9 @@ import java.io.File;
 import java.util.ArrayList;
 
 import tech.wangj.pickimage.R;
-import tech.wangj.pickimage.model.AlbumItem;
-import tech.wangj.pickimage.utils.DisplaysUtil;
-import tech.wangj.pickimage.utils.SdcardImageLoader;
+import teach.wangjie.imagepicker.model.AlbumItem;
+import teach.wangjie.imagepicker.utils.DisplaysUtil;
+import teach.wangjie.imagepicker.utils.SdcardImageLoader;
 
 /**
  * Created by wangj on 2016/8/22

@@ -1,4 +1,4 @@
-package tech.wangj.pickimage.utils;
+package teach.wangjie.imagepicker.utils;
 
 import android.app.Activity;
 import android.os.Environment;

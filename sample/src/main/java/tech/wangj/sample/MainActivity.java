@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import tech.wangj.pickimage.PhotoWallActivity;
+import teach.wangjie.imagepicker.PhotoWallActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         //跳转至最终的选择图片页面
         Intent intent = new Intent(MainActivity.this, PhotoWallActivity.class);
         startActivityForResult(intent, PhotoWallActivity.REQUEST_CODE);
-
     }
 
     @Override
