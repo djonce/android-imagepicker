@@ -1,4 +1,4 @@
-package teach.wangjie.imagepicker.utils;
+package tech.wangjie.imagepicker.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import tech.wangj.pickimage.R;
+import tech.wangjie.imagepicker.R;
 
 /**
  * Created by wangj on 2016/8/22

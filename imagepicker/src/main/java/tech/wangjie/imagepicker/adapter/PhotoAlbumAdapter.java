@@ -1,4 +1,4 @@
-package teach.wangjie.imagepicker.adapter;
+package tech.wangjie.imagepicker.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,10 +11,10 @@ import android.widget.TextView;
 import java.io.File;
 import java.util.ArrayList;
 
-import tech.wangj.pickimage.R;
-import teach.wangjie.imagepicker.model.AlbumItem;
-import teach.wangjie.imagepicker.utils.DisplaysUtil;
-import teach.wangjie.imagepicker.utils.SdcardImageLoader;
+import tech.wangjie.imagepicker.R;
+import tech.wangjie.imagepicker.model.AlbumItem;
+import tech.wangjie.imagepicker.utils.DisplaysUtil;
+import tech.wangjie.imagepicker.utils.SdcardImageLoader;
 
 /**
  * Created by wangj on 2016/8/22
@@ -52,8 +52,7 @@ public class PhotoAlbumAdapter extends BaseAdapter{
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = LayoutInflater.from(context).
-                    inflate(R.layout.view_photo_album_lv_item, null);
+            convertView = LayoutInflater.from(context).inflate(R.layout.view_photo_album_lv_item, null);
             holder = new ViewHolder();
 
             holder.firstImageIV = (ImageView) convertView.findViewById(R.id.select_img_gridView_img);

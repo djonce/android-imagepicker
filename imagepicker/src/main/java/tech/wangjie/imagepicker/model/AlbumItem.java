@@ -1,4 +1,4 @@
-package teach.wangjie.imagepicker.model;
+package tech.wangjie.imagepicker.model;
 
 /**
  * Created by wangj on 2016/8/22

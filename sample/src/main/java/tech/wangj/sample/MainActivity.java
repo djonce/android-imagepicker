@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import teach.wangjie.imagepicker.PhotoWallActivity;
+import tech.wangjie.imagepicker.PhotoWallActivity;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package teach.wangjie.imagepicker;
+package tech.wangjie.imagepicker;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -17,10 +17,9 @@ import android.widget.TextView;
 import java.io.File;
 import java.util.ArrayList;
 
-import tech.wangj.pickimage.R;
-import teach.wangjie.imagepicker.adapter.PhotoWallAdapter;
-import teach.wangjie.imagepicker.utils.DisplaysUtil;
-import teach.wangjie.imagepicker.utils.GloableUtils;
+import tech.wangjie.imagepicker.adapter.PhotoWallAdapter;
+import tech.wangjie.imagepicker.utils.DisplaysUtil;
+import tech.wangjie.imagepicker.utils.GloableUtils;
 
 /**
  * Created by wangj on 2016/8/22
